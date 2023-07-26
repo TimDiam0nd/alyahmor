@@ -32,9 +32,9 @@ import stopword_affixer
 class genelex:
     
     def __init__(self,):
-        self.verb_vocalizer = verb_affixer.verb_affixer()        
-        self.noun_vocalizer = noun_affixer.noun_affixer()        
-        self.stopword_vocalizer = stopword_affixer.stopword_affixer()
+        self.verb_vocalizer = verb_affixer()        
+        self.noun_vocalizer = noun_affixer()        
+        self.stopword_vocalizer = stopword_affixer()
         pass
     def generate_by_affixes(self, word, word_type="noun", affixes =[], vocalized=True,):
         """
